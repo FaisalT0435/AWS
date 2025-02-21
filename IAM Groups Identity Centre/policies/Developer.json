@@ -1,0 +1,31 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:*",
+                "eks:*",
+                "lambda:*",
+                "s3:*",
+                "rds:*",
+                "dynamodb:*",
+                "sns:*",
+                "sqs:*",
+                "cloudwatch:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Deny",
+            "Action": [
+                "iam:*",
+                "organizations:*",
+                "account:*",
+                "billing:*",
+                "support:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
