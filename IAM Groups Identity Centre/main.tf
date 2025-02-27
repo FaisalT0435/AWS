@@ -55,7 +55,7 @@ resource "aws_ssoadmin_permission_set" "developer" {
 }
 
 resource "aws_ssoadmin_permission_set_inline_policy" "developer" {
-  inline_policy      = file("/policies/Developer.json")
+  inline_policy      = file("./IAM Groups Identity Centre/policies/Developer.json")
   instance_arn       = tolist(data.aws_ssoadmin_instances.example.arns)[0]
   permission_set_arn = aws_ssoadmin_permission_set.developer.arn
 }
@@ -103,7 +103,7 @@ resource "aws_ssoadmin_permission_set" "Root" {
 }
 
 resource "aws_ssoadmin_permission_set_inline_policy" "Root" {
-  inline_policy      = file("/policies/RootPolicies.json")
+  inline_policy      = file("./IAM Groups Identity Centre/policies/Developer.json")
   instance_arn       = tolist(data.aws_ssoadmin_instances.example.arns)[0]
   permission_set_arn = aws_ssoadmin_permission_set.Root.arn
 }
