@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-2"  # Replace with your desired AWS region
+  region = "us-east-1"  # Replace with your desired AWS region
 }
 
 module "iam" {
@@ -7,12 +7,6 @@ module "iam" {
 
   # Pass any required variables to the module
   target_account_1 = var.target_account_1
-}
-
-# Define any required variables
-variable "target_account_1" {
-  description = "The target AWS account ID for SSO account assignments"
-  type        = string
 }
 
 # Output any necessary outputs from the module
