@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "iam" {
-  source = "/IAM Groups Identity Centre"
+  source = "///IAM%20Groups%20Identity%20Centre"
 
   # Pass any required variables to the module
   target_account_1 = var.target_account_1
