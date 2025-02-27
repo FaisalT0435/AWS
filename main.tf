@@ -9,6 +9,9 @@ module "iam" {
   target_account_1 = var.target_account_1
 }
 
+# Define any required variables
+
+
 # Output any necessary outputs from the module
 output "developer_group_id" {
   value = module.iam.developer_group_id
