@@ -13,9 +13,6 @@ provider "aws" {
 
 module "ec2_free_tier" {
   source = "./Instance"
-
-  # Pass any required variables to the module
-  target_account_1 = var.target_account_dev
 }
 
 
