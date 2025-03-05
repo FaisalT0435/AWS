@@ -12,7 +12,7 @@ provider "aws" {
 # Define any required variables
 
 module "ec2_free_tier" {
-  source = " ./Instance"
+  source = " /Instance"
 }
 
 
