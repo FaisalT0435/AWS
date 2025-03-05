@@ -62,7 +62,7 @@ resource "aws_ebs_volume" "ebs_volume" {
   }
 }
 
-resource "aws_elastic_ip" "elastic_ip" {
+resource "aws_eip" "elastic_ip" {
   instance = aws_instance.ec2_free_tier.id
 }
 
