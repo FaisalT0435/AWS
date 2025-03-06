@@ -19,6 +19,7 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "Key pair name for SSH access"
+  default     = "coba"
 }
 
 variable "instance_name" {
