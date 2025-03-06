@@ -1,7 +1,6 @@
 variable "target_account_1" {
   description = "The target AWS account ID for SSO account assignments"
   type        = string
-  default = "603809535811"
 }
 variable "aws_region" {
   description = "AWS region"
@@ -20,7 +19,6 @@ variable "instance_type" {
 
 variable "key_name" {
   description = "Key pair name for SSH access"
-  default = "dev-keypair"
 }
 
 variable "instance_name" {
@@ -41,5 +39,4 @@ variable "ebs_encryption" {
 variable "target_account_dev" {
   description = "Target AWS Account ID"
   type        = string
-  default     = "060795900436"
 }
