@@ -10,8 +10,12 @@ terraform {
 
 
 provider "aws" {
-  region = "ap-southeast-3"  # Replace with your desired AWS region
+  region = "ap-southeast-3"
+  assume_role {
+    role_arn = var.target_account_role
+  }
 }
+
 
 # module "iam" {
 #   source = "./IAM Groups Identity Centre"

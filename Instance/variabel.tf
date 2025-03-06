@@ -42,3 +42,6 @@ variable "target_account_dev" {
   type        = string
   default = "xxx"
 }
+variable "target_account_role" {
+  description = "Role ARN for Target AWS Account"
+}
