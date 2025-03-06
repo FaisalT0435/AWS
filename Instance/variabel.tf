@@ -1,7 +1,7 @@
-variable "target_account_1" {
-  description = "The target AWS account ID for SSO account assignments"
-  type        = string
-}
+# variable "target_account_1" {
+#   description = "The target AWS account ID for SSO account assignments"
+#   type        = string
+# }
 variable "aws_region" {
   description = "AWS region"
   default     = "ap-southeast-3"
@@ -40,4 +40,5 @@ variable "ebs_encryption" {
 variable "target_account_dev" {
   description = "Target AWS Account ID"
   type        = string
+  default = "xxx"
 }

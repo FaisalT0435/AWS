@@ -1,4 +1,4 @@
-target_account_1 = "603809535811"
+# target_account_1 = "603809535811"
 target_account_dev = "060795900436"
 key_name = "dev-keypair"
 aws_region = "ap-southeast-3"
