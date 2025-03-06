@@ -34,7 +34,7 @@ resource "aws_iam_role_policy_attachment" "ssm_policy" {
 }
 
 resource "aws_instance" "ec2_free_tier" {
-  provider              = aws.target-account
+  # provider              = aws.target-account
   ami                    = var.ami_id
   instance_type          = var.instance_type
   key_name              = aws_key_pair.ec2_key.key_name
@@ -100,7 +100,7 @@ resource "aws_ec2_tag" "target_ec2" {
 resource "aws_ec2_tag" "target_type" {
   resource_id = aws_instance.ec2_free_tier.id
   key         = "TargetType"
-  value       = "AWS_ACCOUNT"
+  value       = var.target_account_dev
 }
 
 
