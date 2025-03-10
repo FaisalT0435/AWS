@@ -34,9 +34,8 @@ Before using this repository, ensure you have the following installed and config
    aws configure
    
 6. Set up Jenkins:
-.
-  Install the necessary plugins (e.g., Terraform, AWS, Git).
-  Create a new pipeline job and point it to the Jenkinsfile in this repository.
+  * Install the necessary plugins (e.g., Terraform, AWS, Git).
+  * Create a new pipeline job and point it to the Jenkinsfile in this repository.
 
 
 ## Contributions are welcome! Please follow these steps:
