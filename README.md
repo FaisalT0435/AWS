@@ -16,6 +16,7 @@ Before using this repository, ensure you have the following installed and config
 ---
 
 ## Repository Structure
+.
 ├── modules/ # Reusable Terraform modules
 │ ├── vpc/ # VPC module
 │ ├── ec2/ # EC2 module
@@ -41,13 +42,16 @@ Before using this repository, ensure you have the following installed and config
    cd your-repo-name
    
 2. Initialize Terraform in the desired environment directory:
+   ```bash
    cd environments/dev
    terraform init
    
 4. Configure AWS credentials:
+   ```bash
    aws configure
    
 6. Set up Jenkins:
+   --
   Install the necessary plugins (e.g., Terraform, AWS, Git).
   Create a new pipeline job and point it to the Jenkinsfile in this repository.
 
