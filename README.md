@@ -15,24 +15,7 @@ Before using this repository, ensure you have the following installed and config
 
 ---
 
-## Repository Structure
-.
- ├── modules/ # Reusable Terraform modules
- │ ├── vpc/ # VPC module
- │ ├── ec2/ # EC2 module
- │ └── rds/ # RDS module
- ├── environments/ # Environment-specific configurations
- │ ├── dev/ # Development environment
- │ ├── staging/ # Staging environment
- │ └── prod/ # Production environment
- ├── Jenkinsfile # Jenkins pipeline definition
- ├── main.tf # Main Terraform configuration
- ├── variables.tf # Terraform variables
- ├── outputs.tf # Terraform outputs
- └── README.md # This file
 
-
----
 
 ## Setup
 
@@ -51,6 +34,7 @@ Before using this repository, ensure you have the following installed and config
    aws configure
    
 6. Set up Jenkins:
+.
   Install the necessary plugins (e.g., Terraform, AWS, Git).
   Create a new pipeline job and point it to the Jenkinsfile in this repository.
 
